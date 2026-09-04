@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Skin Rejuvenation at SRENOVA Hyderabad - consultation-led treatments for dullness, texture, pigmentation, hydration, fine lines and overall skin glow.">
+<title>Skin Rejuvenation | SRENOVA</title>
+<link rel="stylesheet" href="../styles.css?v=20260904f">
+<style>
+.sr-hero{background:linear-gradient(90deg,var(--cream) 0%,var(--paper) 58%,#efe7da 100%);color:var(--ink);padding:56px 0 70px;overflow:hidden;border-bottom:1px solid var(--line)}
+.sr-hero .breadcrumb{color:var(--muted)}
+.sr-hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:72px;align-items:center}
+.sr-hero .eyebrow{color:var(--green)}
+.sr-hero h1{font:500 clamp(52px,5.4vw,78px)/.94 var(--serif);letter-spacing:-.04em;margin:16px 0 22px;max-width:620px}
+.sr-hero h1 span{display:block;color:var(--gold);font-style:italic}
+.sr-hero p{color:var(--muted);max-width:620px;margin:0 0 24px}
+.sr-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.sr-hero-photo{position:relative;background:var(--paper);padding:18px;border:1px solid rgba(198,161,91,.42);box-shadow:var(--shadow)}
+.sr-hero-photo:before{content:'';position:absolute;inset:34px 4px 4px 34px;border:1px solid rgba(16,58,46,.18);z-index:0}
+.sr-hero-photo img{position:relative;z-index:1;width:100%;height:510px;object-fit:cover;object-position:center;border:1px solid var(--line)}
+.sr-photo-note{position:absolute;left:28px;right:28px;bottom:24px;background:rgba(6,27,20,.84);border-left:2px solid var(--gold2);padding:16px 18px;color:rgba(255,255,255,.78);font-size:12px}
+.sr-photo-note strong{display:block;color:#fff;font-size:10px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:4px}
+.sr-strip{background:var(--paper);border-bottom:1px solid var(--line)}
+.sr-strip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-left:1px solid var(--line)}
+.sr-strip-item{padding:18px;border-right:1px solid var(--line)}
+.sr-strip-item img{width:100%;height:230px;object-fit:cover;margin-bottom:16px}
+.sr-strip-item small{display:block;color:var(--gold);font-size:9px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:5px}
+.sr-strip-item h3{font:500 28px/1 var(--serif);margin:0 0 8px;color:var(--green)}
+.sr-strip-item p{font-size:12px;color:var(--muted);margin:0}
+.sr-main{background:var(--paper)}
+.sr-two{display:grid;grid-template-columns:1.03fr .97fr;gap:78px;align-items:start}
+.sr-two h2,.sr-options h2,.sr-journey h2,.sr-glance h2{font:500 56px/.98 var(--serif);letter-spacing:-.03em;margin:14px 0 22px}
+.sr-two p{color:var(--muted)}
+.sr-concern-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:30px}
+.sr-concern{background:var(--cream);border:1px solid var(--line);padding:18px 20px;min-height:96px}
+.sr-concern b{font:500 28px/1 var(--serif);color:var(--gold);display:block;margin-bottom:8px}
+.sr-concern span{font-size:12px;color:var(--muted)}
+.sr-side-card{background:var(--ivory);border:1px solid var(--line);padding:34px}
+.sr-side-card img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;margin-bottom:24px}
+.sr-side-card h3{font:500 34px/1 var(--serif);margin:0 0 14px;color:var(--green)}
+.sr-side-card p{font-size:13px;color:var(--muted)}
+.sr-options{background:var(--ivory)}
+.sr-option-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:42px}
+.sr-option{background:var(--paper);border:1px solid var(--line);padding:30px 26px;min-height:285px;display:flex;flex-direction:column}
+.sr-option img{width:100%;height:118px;object-fit:cover;margin-bottom:22px}
+.sr-option small{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.sr-option h3{font:500 29px/1 var(--serif);margin:10px 0 10px;color:var(--green)}
+.sr-option p{font-size:12px;color:var(--muted);margin:0}
+.sr-note{margin-top:30px;padding:22px 26px;background:var(--paper);border-left:3px solid var(--gold);font-size:12px;color:var(--muted)}
+.sr-note strong{color:var(--green)}
+.sr-journey{background:var(--green);color:#fff}
+.sr-journey-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:70px}
+.sr-journey .eyebrow{color:var(--gold2)}
+.sr-journey h2{color:#fff}
+.sr-journey p{color:rgba(255,255,255,.67)}
+.sr-timeline{border-top:1px solid rgba(255,255,255,.16)}
+.sr-step{display:grid;grid-template-columns:74px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.sr-step b{font:500 38px/1 var(--serif);color:var(--gold2)}
+.sr-step h3{font:500 28px/1 var(--serif);margin:0 0 8px}
+.sr-step p{font-size:12px;margin:0}
+.sr-glance{background:var(--paper)}
+.sr-glance-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line)}
+.sr-glance-card{padding:28px 24px;border-right:1px solid var(--line)}
+.sr-glance-card:last-child{border-right:0}
+.sr-glance-card span{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.sr-glance-card h3{font:500 27px/1.05 var(--serif);margin:12px 0 8px;color:var(--green)}
+.sr-glance-card p{font-size:12px;color:var(--muted);margin:0}
+@media(max-width:1020px){.sr-hero-grid,.sr-two,.sr-journey-grid{grid-template-columns:1fr}.sr-hero-photo img{height:500px}.sr-strip-grid,.sr-option-grid,.sr-glance-grid{grid-template-columns:1fr 1fr}.sr-glance-card{border-bottom:1px solid var(--line)}}
+@media(max-width:780px){.sr-hero{padding:44px 0 58px}.sr-hero h1{font-size:46px}.sr-hero p{font-size:14px;line-height:1.65}.sr-hero-photo{padding:10px}.sr-hero-photo:before{inset:20px 0 0 20px}.sr-hero-photo img{height:390px}.sr-photo-note{position:relative;left:auto;right:auto;bottom:auto;margin-top:-1px}.sr-strip-grid,.sr-concern-list,.sr-option-grid,.sr-glance-grid{grid-template-columns:1fr}.sr-strip-item,.sr-glance-card{border-right:0}.sr-two h2,.sr-options h2,.sr-journey h2,.sr-glance h2{font-size:44px}.sr-step{grid-template-columns:54px 1fr}.sr-side-card{padding:24px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>3rd Floor, Above Reliance Trends, Gopanpally Road, Hyderabad</span><span>•</span><a href="tel:+919100060902">+91 91000 60902</a><span>•</span><a href="mailto:srenovanallagandla@gmail.com">srenovanallagandla@gmail.com</a></div></div>
+<header class="nav" id="nav"><div class="container nav-inner"><a class="brand" href="../index.html"><img src="../assets/logo.png" alt="SRENOVA"></a><nav class="nav-links" aria-label="Primary"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../services.html">Services</a><div class="nav-drop"><a class="active nav-drop-toggle" href="../treatments.html" aria-haspopup="true" aria-expanded="false">Treatments</a><div class="nav-menu" aria-label="Treatment pages"><a href="../treatments/skin-rejuvenation.html">Skin Rejuvenation</a><a href="../treatments/acne-and-acne-scars.html">Acne & Acne Scars</a><a href="../treatments/pigmentation-and-melasma.html">Pigmentation & Melasma</a><a href="../treatments/anti-aging-treatments.html">Anti-Aging Treatments</a><a href="../treatments/botox-and-dermal-fillers.html">Botox & Dermal Fillers</a><a href="../treatments/laser-hair-removal.html">Laser Hair Removal</a><a href="../treatments/hair-loss-treatment.html">Hair Loss Treatment</a><a href="../treatments/hair-transplant-fue-dhi.html">Hair Transplant FUE/DHI</a><a href="../treatments/prp-and-gfc-therapy.html">PRP & GFC Therapy</a><a href="../treatments/body-contouring.html">Body Contouring</a><a href="../treatments/liposuction.html">Liposuction</a><a href="../treatments/rhinoplasty.html">Rhinoplasty</a></div></div><a href="../index.html#journal">Journal</a><a href="../index.html#contact">Contact</a></nav><a class="btn btn-outline" href="https://wa.me/919100060902" target="_blank">Book Consultation</a><button class="menu" aria-label="Menu">☰</button></div></header>
+
+<section class="sr-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../treatments.html">Treatments</a> / Skin Rejuvenation</div>
+    <div class="sr-hero-grid">
+      <div>
+        <div class="eyebrow">Skin Rejuvenation</div>
+        <h1>Brighter skin, naturally refreshed.<span>Planned by assessment.</span></h1>
+        <p>Skin rejuvenation at SRENOVA is designed for people who want healthier-looking, brighter and more even skin while keeping the result natural. Your plan may include clinical facials, peels, microneedling, skin boosters or laser-based options depending on your concern.</p>
+        <p>Start with what you notice in the mirror - dullness, texture, pigmentation, fine lines, dryness or tired-looking skin - and let the clinician guide the right route.</p>
+        <div class="sr-actions"><a class="btn btn-primary" href="https://wa.me/919100060902" target="_blank">Book Consultation</a><a class="btn btn-outline-dark" href="tel:+919100060902">Call Clinic</a></div>
+      </div>
+      <div class="sr-hero-photo">
+        <img src="../assets/detail-skin-rejuvenation.png" alt="Skin rejuvenation facial assessment at SRENOVA">
+        <div class="sr-photo-note"><strong>Classic consultation-led care</strong>Every plan begins with skin analysis, medical history and a clear explanation of expected downtime and aftercare.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sr-strip">
+  <div class="container sr-strip-grid">
+    <article class="sr-strip-item">
+      <img src="../assets/dermatology-consultation.png" alt="Dermatology consultation with digital skin assessment">
+      <small>Step 01</small>
+      <h3>Skin analysis</h3>
+      <p>The clinician reviews tone, texture, sensitivity, pigmentation pattern, skincare routine and previous treatments before recommending any procedure.</p>
+    </article>
+    <article class="sr-strip-item">
+      <img src="../assets/treatment-skin-rejuvenation-real.png" alt="Gentle skin rejuvenation treatment in clinic">
+      <small>Step 02</small>
+      <h3>Treatment selection</h3>
+      <p>A suitable option is chosen for your concern, from glow and hydration support to deeper texture or collagen-focused treatment.</p>
+    </article>
+    <article class="sr-strip-item">
+      <img src="../assets/consultation.png" alt="Clinician explaining a customized skin rejuvenation plan">
+      <small>Step 03</small>
+      <h3>Review and care</h3>
+      <p>Aftercare, sunscreen, home skincare and review timing are explained so the improvement is supported beyond the treatment room.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section sr-main">
+  <div class="container sr-two">
+    <div>
+      <div class="eyebrow">What It Helps With</div>
+      <h2>For skin that looks dull, uneven or tired.</h2>
+      <p>Skin can lose freshness because of sun exposure, pigmentation, dehydration, early ageing, acne marks, texture irregularity or a routine that is not matching your skin. A rejuvenation plan brings the focus back to skin quality instead of simply adding more products or choosing a procedure blindly.</p>
+      <p>The goal is visible refinement: brighter-looking skin, smoother texture, more even tone and a healthier overall appearance. The treatment intensity is adjusted to your comfort, skin type, schedule and recovery tolerance.</p>
+      <div class="sr-concern-list">
+        <div class="sr-concern"><b>01</b><span>Dullness and loss of natural glow</span></div>
+        <div class="sr-concern"><b>02</b><span>Uneven tone, tan or pigmentation patches</span></div>
+        <div class="sr-concern"><b>03</b><span>Rough texture, open pores or acne marks</span></div>
+        <div class="sr-concern"><b>04</b><span>Fine lines, dryness and early ageing signs</span></div>
+        <div class="sr-concern"><b>05</b><span>Pre-event freshness and maintenance care</span></div>
+        <div class="sr-concern"><b>06</b><span>Skin quality support after other treatments</span></div>
+      </div>
+    </div>
+    <aside class="sr-side-card">
+      <img src="../assets/dermatology-consultation.png" alt="Clinician explaining a customized skin rejuvenation plan">
+      <h3>A calm, informed consultation.</h3>
+      <p>Clients often arrive unsure whether they need a facial, peel, laser or injectable skin treatment. The consultation helps translate the concern into a sensible plan, with clear discussion of comfort, sessions, cost range, aftercare and realistic expectations.</p>
+      <a class="link" href="https://wa.me/919100060902" target="_blank">Ask about your concern <span>→</span></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section sr-options">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Rejuvenation Pathways</div><h2>For glow, tone, hydration and refined skin quality.</h2></div>
+      <p>This page should feel different from acne care. Rejuvenation is planned around freshness, radiance and maintenance rather than active breakout control.</p>
+    </div>
+    <div class="sr-option-grid">
+      <article class="sr-option"><img src="../assets/detail-skin-rejuvenation.png" alt="Fresh skin glow and hydration treatment"><small>Instant freshness</small><h3>Hydra-glow care</h3><p>Gentle cleansing, hydration and barrier-supportive care for dull or tired-looking skin, especially before events or seasonal refreshes.</p></article>
+      <article class="sr-option"><img src="../assets/consultation.png" alt="Doctor planning injectable skin booster treatment"><small>Deep hydration</small><h3>Skin boosters</h3><p>May be discussed for crepey dryness, reduced bounce and skin that needs hydration support beyond routine facials.</p></article>
+      <article class="sr-option"><img src="../assets/detail-pigmentation.png" alt="Tone and pigmentation refinement planning"><small>Brightness</small><h3>Brightening peels</h3><p>Selected superficial peels may support glow, mild uneven tone and dullness when the skin barrier is stable.</p></article>
+      <article class="sr-option"><img src="../assets/treatment-skin-rejuvenation-real.png" alt="Advanced skin rejuvenation treatment"><small>Refinement</small><h3>Laser toning</h3><p>Energy-based rejuvenation may be considered for selected tone, texture or collagen-support goals after skin-type screening.</p></article>
+    </div>
+    <div class="sr-note"><strong>Responsible planning:</strong> Not every visitor needs an intensive procedure. For rejuvenation, the better plan may be a lighter glow treatment, routine correction, sunscreen, or a staged maintenance program.</div>
+  </div>
+</section>
+
+<section class="section sr-journey" id="how-it-works">
+  <div class="container sr-journey-grid">
+    <div>
+      <div class="eyebrow">The SRENOVA Approach</div>
+      <h2>A plan that feels clear before it begins.</h2>
+      <p>A good aesthetic consultation should reduce confusion. You should know what is being treated, why a treatment is suitable, what improvement is realistic and how to care for your skin afterwards.</p>
+    </div>
+    <div class="sr-timeline">
+      <div class="sr-step"><b>01</b><div><h3>Define the skin-quality goal</h3><p>Glow, hydration, brightness, smoothness and early ageing concerns are separated so the plan stays focused.</p></div></div>
+      <div class="sr-step"><b>02</b><div><h3>Review lifestyle and routine</h3><p>Sun exposure, skincare actives, dryness, sensitivity and previous procedures are checked before choosing treatment intensity.</p></div></div>
+      <div class="sr-step"><b>03</b><div><h3>Select a refresh plan</h3><p>Your clinician may suggest a one-time refresh, a short course, or a maintenance rhythm depending on the goal.</p></div></div>
+      <div class="sr-step"><b>04</b><div><h3>Maintain the glow</h3><p>Home care, sunscreen and review timing are explained so results are supported after the clinic visit.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section sr-glance">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">At A Glance</div><h2>What clients usually want to know.</h2></div>
+    </div>
+    <div class="sr-glance-grid">
+      <div class="sr-glance-card"><span>Suitability</span><h3>Personalized</h3><p>Chosen after skin assessment, not by a fixed package.</p></div>
+      <div class="sr-glance-card"><span>Sessions</span><h3>Varies</h3><p>Some goals need one visit; others work better as a planned course.</p></div>
+      <div class="sr-glance-card"><span>Downtime</span><h3>Procedure-based</h3><p>Gentle facials, peels, microneedling and lasers have different recovery profiles.</p></div>
+      <div class="sr-glance-card"><span>Best for</span><h3>Natural freshness</h3><p>Ideal for clients seeking better skin quality rather than a changed face.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="eyebrow">Before You Book</div><h2>Questions worth asking.</h2></div>
+      <p>Clear answers help clients feel confident, especially when comparing treatments online.</p>
+    </div>
+    <details><summary>Which skin rejuvenation treatment is best for me?</summary><p>That depends on your skin concern, skin type, sensitivity, medical history and available downtime. You do not need to choose the procedure before consultation.</p></details>
+    <details><summary>Can skin rejuvenation help with dullness and pigmentation?</summary><p>It may help selected dullness, tanning and mild uneven tone, but persistent pigmentation needs diagnosis and strict sun protection. The clinician will explain whether rejuvenation or a pigmentation-focused plan is better.</p></details>
+    <details><summary>Will my skin peel or look red afterwards?</summary><p>Recovery depends on the treatment used. A gentle facial may have little visible downtime, while peels, microneedling or laser procedures can involve redness, peeling or temporary sensitivity.</p></details>
+    <details><summary>How soon can I do it before an event?</summary><p>Timing depends on the procedure. Gentle glow treatments may be planned closer to an event, while peels, microneedling and lasers usually need more recovery time and should be planned earlier.</p></details>
+    <details><summary>What should I avoid before consultation?</summary><p>Tell the clinic about active acne, infections, recent procedures, allergies, medications, pregnancy or breastfeeding, and strong skincare actives such as retinoids or exfoliating acids.</p></details>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner">
+    <div><div class="eyebrow" style="color:var(--gold2)">Private Consultation</div><h2>Bring your skin concern. We will plan the route.</h2><p>Book a SRENOVA consultation to understand which rejuvenation option fits your skin, your schedule and your expectations.</p></div>
+    <div class="cta-actions"><a class="btn btn-gold" href="https://wa.me/919100060902" target="_blank">Book Consultation</a><a class="btn btn-outline" href="tel:+919100060902">Call Clinic</a></div>
+  </div>
+</section>
+
+<footer><div class="container"><div class="footer-grid"><div class="footer-brand"><img src="../assets/logo.png" alt="SRENOVA"><p>Advanced Aesthetics & Plastic Surgery Center. Specialist-led care for skin, hair, aesthetics and surgery in Hyderabad.</p></div><div><h4>Explore</h4><a href="../about.html">About</a><a href="../services.html">Services</a><a href="../treatments.html">Treatments</a><a href="../index.html#journal">Journal</a></div><div><h4>Contact</h4><a href="tel:+919100060902">+91 91000 60902</a><a href="mailto:srenovanallagandla@gmail.com">srenovanallagandla@gmail.com</a><span style="font-size:12px">3rd Floor, Above Reliance Trends, Opp. Aparna Neo Mall, Gopanpally Road, Hyderabad</span></div></div><div class="copyright"><span>© 2026 SRENOVA — redesign prototype.</span><span>Clinical claims, timelines and patient-facing medical copy should be reviewed by the clinic before production.</span></div></div></footer>
+<a class="wa" href="https://wa.me/919100060902" target="_blank" aria-label="WhatsApp">✆</a>
+<script src="../script.js"></script>
+</body>
+</html>
