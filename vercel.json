@@ -3,6 +3,8 @@
   "trailingSlash": false,
   "redirects": [
     { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/contact.html", "destination": "/contact", "permanent": true },
+    { "source": "/journal.html", "destination": "/journal", "permanent": true },
     { "source": "/about.html", "destination": "/about", "permanent": true },
     { "source": "/services.html", "destination": "/services", "permanent": true },
     { "source": "/treatments.html", "destination": "/treatments", "permanent": true },
