@@ -10,9 +10,12 @@ class CleanURLHandler(http.server.SimpleHTTPRequestHandler):
         path = self.path.split('?')[0].split('#')[0]
         full = self.translate_path(path)
 
-        # If the path doesn't exist but path.html does, serve the .html file
-        if not os.path.exists(full) and os.path.exists(full + '.html'):
-            self.path = path + '.html'
+        # If path.html exists, serve it — unless path is a real file, or a
+        # directory with its own index.html (e.g. /treatments -> treatments.html)
+        stripped = full.rstrip('/')
+        is_page_dir = os.path.isdir(stripped) and os.path.exists(os.path.join(stripped, 'index.html'))
+        if not os.path.isfile(stripped) and not is_page_dir and os.path.exists(stripped + '.html'):
+            self.path = path.rstrip('/') + '.html'
 
         super().do_GET()
 
