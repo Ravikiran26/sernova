@@ -1,5 +1,3 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-echo "Starting SRENOVA at http://localhost:8080"
-echo "Press Control+C to stop the server."
-python3 -m http.server 8080
+python3 serve-local.py 8080

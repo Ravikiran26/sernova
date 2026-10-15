@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 820" width="680" height="820">
+  <defs>
+    <linearGradient id="bg6h" x1="0" y1="0" x2="0.15" y2="1">
+      <stop offset="0%" stop-color="#0C2218"/>
+      <stop offset="100%" stop-color="#050E09"/>
+    </linearGradient>
+    <radialGradient id="skin6" cx="40%" cy="22%" r="75%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#E2A57A"/>
+      <stop offset="32%" stop-color="#C07A42"/>
+      <stop offset="68%" stop-color="#9A5C2A"/>
+      <stop offset="100%" stop-color="#6A3812"/>
+    </radialGradient>
+    <radialGradient id="siderim6" cx="50%" cy="45%" r="50%" gradientUnits="objectBoundingBox">
+      <stop offset="52%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.52)"/>
+    </radialGradient>
+    <linearGradient id="frontlight6" x1="0" y1="0.5" x2="1" y2="0.5">
+      <stop offset="0%" stop-color="rgba(255,215,165,0)"/>
+      <stop offset="38%" stop-color="rgba(255,215,165,0)"/>
+      <stop offset="50%" stop-color="rgba(255,215,165,0.13)"/>
+      <stop offset="62%" stop-color="rgba(255,215,165,0)"/>
+      <stop offset="100%" stop-color="rgba(255,215,165,0)"/>
+    </linearGradient>
+    <filter id="gb6" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="bds6" x="-8%" y="-3%" width="116%" height="112%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000" flood-opacity="0.80"/>
+    </filter>
+    <clipPath id="tc6">
+      <path d="M 190 68 C 168 76 146 102 136 132 L 130 198 C 126 234 130 272 148 302 C 155 322 168 348 172 372 L 175 448 C 172 488 178 528 190 560 C 200 592 212 622 224 650 L 225 755 L 455 755 L 456 650 C 468 622 480 592 490 560 C 502 528 508 488 505 448 L 508 372 C 512 348 525 322 532 302 C 550 272 554 234 550 198 L 544 132 C 534 102 512 76 490 68 C 458 52 418 46 340 46 C 262 46 222 52 190 68 Z"/>
+    </clipPath>
+    <radialGradient id="vig6" cx="50%" cy="50%" r="50%" gradientUnits="objectBoundingBox">
+      <stop offset="50%" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0.68)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="820" fill="url(#bg6h)"/>
+  <ellipse cx="340" cy="420" rx="265" ry="355" fill="rgba(22,48,32,0.48)"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="340" cy="778" rx="185" ry="18" fill="rgba(0,0,0,0.58)"/>
+
+  <!-- Torso base with skin gradient -->
+  <path d="M 190 68 C 168 76 146 102 136 132 L 130 198 C 126 234 130 272 148 302 C 155 322 168 348 172 372 L 175 448 C 172 488 178 528 190 560 C 200 592 212 622 224 650 L 225 755 L 455 755 L 456 650 C 468 622 480 592 490 560 C 502 528 508 488 505 448 L 508 372 C 512 348 525 322 532 302 C 550 272 554 234 550 198 L 544 132 C 534 102 512 76 490 68 C 458 52 418 46 340 46 C 262 46 222 52 190 68 Z"
+        fill="url(#skin6)" filter="url(#bds6)"/>
+
+  <!-- Side rim darkening -->
+  <path d="M 190 68 C 168 76 146 102 136 132 L 130 198 C 126 234 130 272 148 302 C 155 322 168 348 172 372 L 175 448 C 172 488 178 528 190 560 C 200 592 212 622 224 650 L 225 755 L 455 755 L 456 650 C 468 622 480 592 490 560 C 502 528 508 488 505 448 L 508 372 C 512 348 525 322 532 302 C 550 272 554 234 550 198 L 544 132 C 534 102 512 76 490 68 C 458 52 418 46 340 46 C 262 46 222 52 190 68 Z"
+        fill="url(#siderim6)"/>
+
+  <!-- Front light -->
+  <path d="M 190 68 C 168 76 146 102 136 132 L 130 198 C 126 234 130 272 148 302 C 155 322 168 348 172 372 L 175 448 C 172 488 178 528 190 560 C 200 592 212 622 224 650 L 225 755 L 455 755 L 456 650 C 468 622 480 592 490 560 C 502 528 508 488 505 448 L 508 372 C 512 348 525 322 532 302 C 550 272 554 234 550 198 L 544 132 C 534 102 512 76 490 68 C 458 52 418 46 340 46 C 262 46 222 52 190 68 Z"
+        fill="url(#frontlight6)"/>
+
+  <!-- Clipped body detail -->
+  <g clip-path="url(#tc6)">
+
+    <!-- CHEST - pec highlights -->
+    <ellipse cx="260" cy="182" rx="82" ry="72" fill="rgba(255,210,160,0.22)" transform="rotate(-10,260,182)"/>
+    <ellipse cx="420" cy="182" rx="82" ry="72" fill="rgba(255,210,160,0.20)" transform="rotate(10,420,182)"/>
+
+    <!-- Sternum center line -->
+    <line x1="340" y1="68" x2="340" y2="278" stroke="rgba(0,0,0,0.30)" stroke-width="6" stroke-linecap="round" filter="url(#gb6)"/>
+
+    <!-- Pec lower crease -->
+    <path d="M 192 250 C 238 268 295 276 340 274" fill="none" stroke="rgba(0,0,0,0.28)" stroke-width="5" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 340 274 C 385 276 442 268 488 250" fill="none" stroke="rgba(0,0,0,0.26)" stroke-width="5" stroke-linecap="round" filter="url(#gb6)"/>
+
+    <!-- Clavicle highlights -->
+    <path d="M 200 82 C 255 68 305 62 340 62" fill="none" stroke="rgba(255,220,170,0.22)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 480 82 C 425 68 375 62 340 62" fill="none" stroke="rgba(255,220,170,0.20)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- LINEA ALBA (vertical center line of abs) -->
+    <line x1="340" y1="278" x2="340" y2="562" stroke="rgba(0,0,0,0.50)" stroke-width="7" stroke-linecap="round" filter="url(#gb6)"/>
+    <line x1="340" y1="278" x2="340" y2="562" stroke="rgba(0,0,0,0.24)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- TENDINOUS INSCRIPTION 1 - top border of abs -->
+    <path d="M 215 280 C 260 270 322 267 340 267 C 358 267 420 270 465 280" fill="none" stroke="rgba(0,0,0,0.46)" stroke-width="6" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 215 280 C 260 270 322 267 340 267 C 358 270 420 270 465 280" fill="none" stroke="rgba(0,0,0,0.22)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- TENDINOUS INSCRIPTION 2 - between pair 1 and 2 -->
+    <path d="M 208 368 C 252 358 320 355 340 355 C 360 355 428 358 472 368" fill="none" stroke="rgba(0,0,0,0.42)" stroke-width="5.5" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 208 368 C 252 358 320 355 340 355 C 360 358 428 358 472 368" fill="none" stroke="rgba(0,0,0,0.20)" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- TENDINOUS INSCRIPTION 3 - between pair 2 and 3 -->
+    <path d="M 205 455 C 250 445 320 442 340 442 C 360 442 430 445 475 455" fill="none" stroke="rgba(0,0,0,0.36)" stroke-width="5" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 205 455 C 250 445 320 442 340 442 C 360 445 430 445 475 455" fill="none" stroke="rgba(0,0,0,0.17)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Bottom of abs / pubic line -->
+    <path d="M 210 545 C 252 537 320 534 340 534 C 360 534 428 537 470 545" fill="none" stroke="rgba(0,0,0,0.30)" stroke-width="4.5" stroke-linecap="round" filter="url(#gb6)"/>
+
+    <!-- Lateral rectus borders (outer edge of abs, vertical) -->
+    <path d="M 215 280 C 210 322 208 366 208 410 C 208 452 210 496 214 538" fill="none" stroke="rgba(0,0,0,0.30)" stroke-width="5" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 465 280 C 470 322 472 366 472 410 C 472 452 470 496 466 538" fill="none" stroke="rgba(0,0,0,0.30)" stroke-width="5" stroke-linecap="round" filter="url(#gb6)"/>
+
+    <!-- Muscle segment highlights (raised belly of each abs segment) -->
+    <ellipse cx="258" cy="323" rx="45" ry="42" fill="rgba(255,218,168,0.26)"/>
+    <ellipse cx="422" cy="323" rx="45" ry="42" fill="rgba(255,218,168,0.24)"/>
+    <ellipse cx="256" cy="410" rx="43" ry="41" fill="rgba(255,218,168,0.21)"/>
+    <ellipse cx="424" cy="410" rx="43" ry="41" fill="rgba(255,218,168,0.19)"/>
+    <ellipse cx="254" cy="497" rx="42" ry="39" fill="rgba(255,218,168,0.17)"/>
+    <ellipse cx="426" cy="497" rx="42" ry="39" fill="rgba(255,218,168,0.15)"/>
+
+    <!-- Oblique muscles (sides) -->
+    <path d="M 175 285 C 174 335 172 385 172 430 C 172 475 176 518 186 555" fill="none" stroke="rgba(0,0,0,0.24)" stroke-width="10" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 505 285 C 506 335 508 385 508 430 C 508 475 504 518 494 555" fill="none" stroke="rgba(0,0,0,0.24)" stroke-width="10" stroke-linecap="round" filter="url(#gb6)"/>
+
+    <!-- Serratus anterior (small diagonal lines below pec, on sides) -->
+    <path d="M 178 298 C 190 292 208 293 216 302" fill="none" stroke="rgba(0,0,0,0.14)" stroke-width="3" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 176 322 C 188 315 206 316 215 326" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="2.5" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 175 346 C 188 339 206 340 215 350" fill="none" stroke="rgba(0,0,0,0.10)" stroke-width="2" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 502 298 C 490 292 472 293 464 302" fill="none" stroke="rgba(0,0,0,0.14)" stroke-width="3" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 504 322 C 492 315 474 316 465 326" fill="none" stroke="rgba(0,0,0,0.12)" stroke-width="2.5" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 505 346 C 492 339 474 340 465 350" fill="none" stroke="rgba(0,0,0,0.10)" stroke-width="2" stroke-linecap="round" filter="url(#gb6)"/>
+
+    <!-- V-line (inguinal ligament) -->
+    <path d="M 228 638 C 262 608 298 592 340 590 C 382 592 418 608 452 638" fill="none" stroke="rgba(0,0,0,0.34)" stroke-width="5" stroke-linecap="round" filter="url(#gb6)"/>
+    <path d="M 230 642 C 264 612 298 596 340 594 C 382 596 416 612 450 642" fill="none" stroke="rgba(0,0,0,0.15)" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Navel -->
+    <ellipse cx="340" cy="545" rx="9" ry="7.5" fill="rgba(45,18,5,0.62)"/>
+    <ellipse cx="339.5" cy="544" rx="5" ry="4" fill="rgba(28,10,2,0.72)"/>
+    <circle cx="339" cy="543" r="2" fill="rgba(14,4,1,0.78)"/>
+
+    <!-- Center body highlight strip -->
+    <ellipse cx="340" cy="358" rx="85" ry="285" fill="rgba(255,218,172,0.09)"/>
+
+  </g>
+
+  <!-- Torso outline -->
+  <path d="M 190 68 C 168 76 146 102 136 132 L 130 198 C 126 234 130 272 148 302 C 155 322 168 348 172 372 L 175 448 C 172 488 178 528 190 560 C 200 592 212 622 224 650 L 225 755 L 455 755 L 456 650 C 468 622 480 592 490 560 C 502 528 508 488 505 448 L 508 372 C 512 348 525 322 532 302 C 550 272 554 234 550 198 L 544 132 C 534 102 512 76 490 68 C 458 52 418 46 340 46 C 262 46 222 52 190 68 Z"
+        fill="none" stroke="rgba(0,0,0,0.62)" stroke-width="2.5"/>
+
+  <!-- Right rim light -->
+  <path d="M 456 650 C 468 622 480 592 490 560 C 502 528 508 488 505 448 L 508 372 C 512 348 525 322 532 302 C 550 272 554 234 550 198 L 544 132 C 534 102 512 76 490 68"
+        fill="none" stroke="rgba(198,161,91,0.18)" stroke-width="1.5"/>
+  <!-- Left rim light -->
+  <path d="M 224 650 C 212 622 200 592 190 560 C 178 528 172 488 175 448 L 172 372 C 168 348 155 322 148 302 C 130 272 126 234 130 198 L 136 132 C 146 102 168 76 190 68"
+        fill="none" stroke="rgba(198,161,91,0.11)" stroke-width="1"/>
+
+  <!-- Vignette -->
+  <rect width="680" height="820" fill="url(#vig6)"/>
+
+  <!-- Branding -->
+  <text x="340" y="778" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-size="11" letter-spacing="7" fill="rgba(198,161,91,0.42)">SRENOVA</text>
+  <line x1="272" y1="786" x2="312" y2="786" stroke="rgba(198,161,91,0.28)" stroke-width="0.8"/>
+  <line x1="368" y1="786" x2="408" y2="786" stroke="rgba(198,161,91,0.28)" stroke-width="0.8"/>
+  <line x1="92" y1="806" x2="192" y2="806" stroke="rgba(198,161,91,0.30)" stroke-width="0.8"/>
+  <text x="340" y="811" text-anchor="middle" font-family="'Cormorant Garamond',Georgia,serif" font-size="12" letter-spacing="5" fill="rgba(198,161,91,0.68)">6-PACK ABDOMINAL ETCHING</text>
+  <line x1="488" y1="806" x2="588" y2="806" stroke="rgba(198,161,91,0.30)" stroke-width="0.8"/>
+  <text x="340" y="818" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-size="8.5" letter-spacing="2.5" fill="rgba(255,255,255,0.26)">HIGH-DEFINITION BODY CONTOURING · SRENOVA HYDERABAD</text>
+</svg>

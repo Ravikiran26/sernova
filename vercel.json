@@ -18,6 +18,8 @@
     { "source": "/treatments/regenerative-scalp-therapy.html", "destination": "/treatments/regenerative-scalp-therapy", "permanent": true },
     { "source": "/treatments/anti-wrinkle-injectables.html", "destination": "/treatments/anti-wrinkle-injectables", "permanent": true },
     { "source": "/treatments/body-contouring.html", "destination": "/treatments/body-contouring", "permanent": true },
+    { "source": "/treatments/six-pack-abs.html", "destination": "/treatments/six-pack-abs", "permanent": true },
+    { "source": "/treatments/eight-pack-abs.html", "destination": "/treatments/eight-pack-abs", "permanent": true },
     { "source": "/treatments/liposuction.html", "destination": "/treatments/liposuction", "permanent": true },
     { "source": "/treatments/rhinoplasty.html", "destination": "/treatments/rhinoplasty", "permanent": true },
     { "source": "/treatments/breast-implants.html", "destination": "/treatments/breast-implants", "permanent": true },
