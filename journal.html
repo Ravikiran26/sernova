@@ -48,6 +48,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 .j-card h2{font:500 30px/1.08 var(--serif);margin:0 0 14px;color:var(--ink)}
 .j-card p{font-size:13px;color:var(--muted);margin:0 0 24px;line-height:1.7;flex:1}
 .j-card .link{margin-top:auto;align-self:flex-start}
+.j-card .j-img{display:block;margin:-36px -36px 26px;aspect-ratio:16/10;overflow:hidden;background:var(--ivory)}
+.j-card .j-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.j-card:hover .j-img img{transform:scale(1.03)}
+.j-card h2 a{color:inherit}
 @media(max-width:1020px){.journal-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:780px){.journal-hero h1{font-size:52px}.journal-grid{grid-template-columns:1fr}}
 </style>
@@ -74,6 +78,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="eyebrow">Recent Articles</div>
     <h2 class="display" style="font:500 54px/1 var(--serif);letter-spacing:-.03em;margin:14px 0 0;color:var(--ink)">Information worth<br><span class="gold">reading.</span></h2>
     <div class="journal-grid" data-reveal>
+<!-- JOURNAL:POSTS -->
       <article class="j-card">
         <small class="j-cat">Hair</small>
         <h2>Regenerative Scalp Therapy vs Growth Factor Therapy: what is the difference?</h2>
@@ -92,6 +97,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>A clear overview of why melasma and uneven skin tone require accurate diagnosis, a structured treatment plan, ongoing maintenance and realistic expectations to see meaningful results.</p>
         <a class="link" href="/contact">Book a Skin Consultation <span>→</span></a>
       </article>
+<!-- /JOURNAL:POSTS -->
     </div>
   </div>
 </section>

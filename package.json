@@ -1,0 +1,17 @@
+{
+  "name": "srenova-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/build.mjs && cd dist && python3 ../serve-local.py 8080"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@portabletext/to-html": "^6.0.0",
+    "@sanity/client": "^8.9.0",
+    "@sanity/image-url": "^2.1.1"
+  }
+}
