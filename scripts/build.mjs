@@ -14,7 +14,7 @@ const SITE = 'https://srenova.in'
 const WHATSAPP = 'https://wa.me/919100060902'
 
 const EXCLUDE = new Set([
-  'node_modules', 'studio', 'scripts', 'dist', '.git', '.vercel', '.DS_Store', '.gitignore',
+  'node_modules', 'studio', 'scripts', 'api', 'dist', '.git', '.vercel', '.DS_Store', '.gitignore',
   'package.json', 'package-lock.json', 'vercel.json', 'serve-local.py',
   'start-local.bat', 'start-local.command', 'README.md', 'README.txt', 'README_LOCAL_TEST.txt',
 ])
@@ -123,6 +123,8 @@ function renderPost(post) {
   const ogImage = ogSource?.asset ? imageUrl(ogSource, 1200, 630) : `${SITE}/assets/clinic-reception-hero.png`
   const words = JSON.stringify(post.body || []).split(/\s+/).length
   const minutes = Math.max(1, Math.round(words / 230))
+  // Only show "Updated" when the post was edited on a later day than it was published.
+  const updated = fmtDate(post._updatedAt) !== fmtDate(post.publishedAt) && post._updatedAt > post.publishedAt
 
   const jsonLd = [
     {
@@ -211,9 +213,11 @@ ${POST_CSS}
   <div class="container">
     <div class="eyebrow">${esc(post.category || 'Journal')}</div>
     <h1>${esc(post.title)}</h1>
-    <div class="post-meta"><a href="/journal">Journal</a><span>•</span><span>${fmtDate(post.publishedAt)}</span><span>•</span><span>${minutes} min read</span>${
+    <div class="post-meta"><a href="/journal">Journal</a><span>•</span><span>${fmtDate(post.publishedAt)}</span>${
+      updated ? `<span>•</span><span>Updated ${fmtDate(post._updatedAt)}</span>` : ''
+    }<span>•</span><span>${minutes} min read</span>${
       post.author ? `<span>•</span><span>By ${esc(post.author.name)}</span>` : ''
-    }</div>
+    }<span data-views hidden>•</span><span data-views hidden></span></div>
   </div>
 </section>
 ${post.coverImage?.asset ? `<img class="post-cover" src="${imageUrl(post.coverImage, 1600, 900)}" alt="${esc(post.coverImage.alt)}">` : ''}
@@ -226,7 +230,24 @@ ${byline}
 <a class="link post-back" href="/journal"><span>←</span> All articles</a>
   </article>
 </section>
-</main>`
+</main>
+<script>
+(function () {
+  // Count one view per browser session; the counter stays hidden if /api/views is unavailable.
+  var slug = ${JSON.stringify(post.slug)}, key = 'viewed:' + slug, seen = false
+  try { seen = !!sessionStorage.getItem(key) } catch (e) {}
+  fetch('/api/views?slug=' + encodeURIComponent(slug), {method: seen ? 'GET' : 'POST'})
+    .then(function (r) { return r.ok ? r.json() : null })
+    .then(function (d) {
+      if (!d || typeof d.views !== 'number' || d.views < 1) return
+      try { sessionStorage.setItem(key, '1') } catch (e) {}
+      var els = document.querySelectorAll('[data-views]')
+      els[1].textContent = d.views.toLocaleString('en-IN') + (d.views === 1 ? ' view' : ' views')
+      for (var i = 0; i < els.length; i++) els[i].hidden = false
+    })
+    .catch(function () {})
+})()
+</script>`
 
   return `${head}\n${bodyStart}${main}${bodyEnd}`
 }
