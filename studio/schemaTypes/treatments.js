@@ -19,6 +19,7 @@ export const treatments = [
   {title: 'Mummy Makeover', value: 'mummy-makeover'},
   {title: 'Tummy Tuck', value: 'tummy-tuck'},
   {title: 'Double Chin', value: 'double-chin'},
+  {title: 'Gynecomastia', value: 'gynecomastia'},
   {title: 'Weight Loss', value: 'weight-loss'},
   {title: 'Bariatric Surgery', value: 'bariatric-surgery'},
   {title: 'Weight-Loss Injectables', value: 'weight-loss-injectables'},

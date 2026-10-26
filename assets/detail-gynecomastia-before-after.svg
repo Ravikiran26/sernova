@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480" role="img" aria-label="Illustration of chest contour before and after gynecomastia surgery">
+<defs><linearGradient id="bg" x1="0" y1="0" x2=".2" y2="1"><stop offset="0" stop-color="#123326"/><stop offset="1" stop-color="#071710"/></linearGradient>
+<radialGradient id="glow" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="rgba(201,162,78,.12)"/><stop offset="1" stop-color="rgba(201,162,78,0)"/></radialGradient></defs>
+<rect width="640" height="480" fill="url(#bg)"/><rect width="640" height="480" fill="url(#glow)"/>
+<defs><clipPath id="l"><rect width="400" height="400"/></clipPath><clipPath id="r"><rect x="400" width="400" height="400"/></clipPath></defs><g transform="translate(-80,80)"><g clip-path="url(#l)"><path d="M264,166 C270,240 280,320 286,400 L514,400 C520,320 530,240 536,166 C520,120 470,96 440,80 L360,80 C330,96 280,120 264,166 Z" fill="rgba(251,248,243,.05)"/>
+<path d="M372,0 C370,30 362,46 334,54 C292,66 244,70 218,88 C194,104 186,132 186,170 C186,250 190,330 194,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M428,0 C430,30 438,46 466,54 C508,66 556,70 582,88 C606,104 614,132 614,170 C614,250 610,330 606,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M250,160 C244,220 240,320 238,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M550,160 C556,220 560,320 562,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M264,166 C270,240 280,320 286,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M536,166 C530,240 520,320 514,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M300,82 C338,90 368,86 394,92" stroke="rgba(251,248,243,.32)" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M500,82 C462,90 432,86 406,92" stroke="rgba(251,248,243,.32)" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M400,96 L400,200 M400,250 L400,350" stroke="rgba(251,248,243,.32)" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M262,165 C262,244 354,266 396,214" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M538,165 C538,244 446,266 404,214" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<circle cx="330" cy="226" r="10" fill="rgba(251,248,243,.10)" stroke="rgba(251,248,243,.82)" stroke-width="2"/>
+<circle cx="470" cy="226" r="10" fill="rgba(251,248,243,.10)" stroke="rgba(251,248,243,.82)" stroke-width="2"/>
+</g><g clip-path="url(#r)"><path d="M264,166 C270,240 280,320 286,400 L514,400 C520,320 530,240 536,166 C520,120 470,96 440,80 L360,80 C330,96 280,120 264,166 Z" fill="rgba(251,248,243,.05)"/>
+<path d="M372,0 C370,30 362,46 334,54 C292,66 244,70 218,88 C194,104 186,132 186,170 C186,250 190,330 194,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M428,0 C430,30 438,46 466,54 C508,66 556,70 582,88 C606,104 614,132 614,170 C614,250 610,330 606,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M250,160 C244,220 240,320 238,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M550,160 C556,220 560,320 562,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M264,166 C270,240 280,320 286,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M536,166 C530,240 520,320 514,400" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M300,82 C338,90 368,86 394,92" stroke="rgba(251,248,243,.32)" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M500,82 C462,90 432,86 406,92" stroke="rgba(251,248,243,.32)" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M400,96 L400,200 M400,250 L400,350" stroke="rgba(251,248,243,.32)" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M268,172 C300,210 352,216 394,196" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M532,172 C500,210 448,216 406,196" stroke="rgba(251,248,243,.82)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<circle cx="332" cy="204" r="6" fill="rgba(251,248,243,.10)" stroke="rgba(251,248,243,.82)" stroke-width="2"/>
+<circle cx="468" cy="204" r="6" fill="rgba(251,248,243,.10)" stroke="rgba(251,248,243,.82)" stroke-width="2"/>
+</g></g>
+<path d="M320,30 L320,450" stroke="#C9A24E" stroke-width="1.5" stroke-dasharray="3 7"/>
+<text x="300" y="56" text-anchor="end" font-family="Helvetica Neue,Arial,sans-serif" font-size="13" letter-spacing="1.6" fill="#C9A24E" font-weight="600">BEFORE</text>
+<text x="300" y="78" text-anchor="end" font-family="Helvetica Neue,Arial,sans-serif" font-size="11.5" letter-spacing="0.3" fill="rgba(251,248,243,.66)" font-weight="400">Fuller chest</text>
+<text x="340" y="56" text-anchor="start" font-family="Helvetica Neue,Arial,sans-serif" font-size="13" letter-spacing="1.6" fill="#C9A24E" font-weight="600">AFTER</text>
+<text x="340" y="78" text-anchor="start" font-family="Helvetica Neue,Arial,sans-serif" font-size="11.5" letter-spacing="0.3" fill="rgba(251,248,243,.66)" font-weight="400">Flatter, firmer</text>
+</svg>

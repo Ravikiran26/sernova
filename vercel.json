@@ -29,6 +29,7 @@
     { "source": "/treatments/mummy-makeover.html", "destination": "/treatments/mummy-makeover", "permanent": true },
     { "source": "/treatments/tummy-tuck.html", "destination": "/treatments/tummy-tuck", "permanent": true },
     { "source": "/treatments/double-chin.html", "destination": "/treatments/double-chin", "permanent": true },
+    { "source": "/treatments/gynecomastia.html", "destination": "/treatments/gynecomastia", "permanent": true },
     { "source": "/treatments/weight-loss.html", "destination": "/treatments/weight-loss", "permanent": true },
     { "source": "/treatments/bariatric-surgery.html", "destination": "/treatments/bariatric-surgery", "permanent": true },
     { "source": "/treatments/weight-loss-injectables.html", "destination": "/treatments/weight-loss-injectables", "permanent": true },
