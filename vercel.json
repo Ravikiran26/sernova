@@ -15,6 +15,7 @@
     { "source": "/treatments/pigmentation-and-melasma.html", "destination": "/treatments/pigmentation-and-melasma", "permanent": true },
     { "source": "/treatments/anti-aging-treatments.html", "destination": "/treatments/anti-aging-treatments", "permanent": true },
     { "source": "/treatments/laser-hair-removal.html", "destination": "/treatments/laser-hair-removal", "permanent": true },
+    { "source": "/treatments/electrolysis.html", "destination": "/treatments/electrolysis", "permanent": true },
     { "source": "/treatments/hair-loss-treatment.html", "destination": "/treatments/hair-loss-treatment", "permanent": true },
     { "source": "/treatments/hair-transplant-surgery.html", "destination": "/treatments/hair-transplant-surgery", "permanent": true },
     { "source": "/treatments/regenerative-scalp-therapy.html", "destination": "/treatments/regenerative-scalp-therapy", "permanent": true },

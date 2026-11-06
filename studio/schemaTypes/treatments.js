@@ -6,6 +6,7 @@ export const treatments = [
   {title: 'Anti-Aging Treatments', value: 'anti-aging-treatments'},
   {title: 'Anti-Wrinkle & Injectables', value: 'anti-wrinkle-injectables'},
   {title: 'Laser Hair Removal', value: 'laser-hair-removal'},
+  {title: 'Electrolysis', value: 'electrolysis'},
   {title: 'Hair Loss Treatment', value: 'hair-loss-treatment'},
   {title: 'Hair Transplant Surgery', value: 'hair-transplant-surgery'},
   {title: 'Regenerative Scalp Therapy', value: 'regenerative-scalp-therapy'},
