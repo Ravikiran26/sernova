@@ -10,11 +10,11 @@ import {treatments} from '../studio/schemaTypes/treatments.js'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const DIST = join(ROOT, 'dist')
-const SITE = 'https://srenova.in'
+const SITE = 'https://www.srenova.in'
 const WHATSAPP = 'https://wa.me/919100060902'
 
 const EXCLUDE = new Set([
-  'node_modules', 'studio', 'scripts', 'api', 'dist', '.git', '.vercel', '.DS_Store', '.gitignore',
+  'node_modules', 'studio', 'scripts', 'api', 'dist', 'assets-originals', '.git', '.vercel', '.DS_Store', '.gitignore',
   'package.json', 'package-lock.json', 'vercel.json', 'serve-local.py',
   'start-local.bat', 'start-local.command', 'README.md', 'README.txt', 'README_LOCAL_TEST.txt',
 ])

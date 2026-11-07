@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://srenova.in/sitemap.xml
+Sitemap: https://www.srenova.in/sitemap.xml

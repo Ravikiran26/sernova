@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "preview": "node scripts/build.mjs && cd dist && python3 ../serve-local.py 8080"
+    "preview": "node scripts/build.mjs && cd dist && python3 ../serve-local.py 8080",
+    "optimize-images": "node scripts/optimize-images.mjs"
   },
   "engines": {
     "node": ">=20"
@@ -13,5 +14,8 @@
     "@portabletext/to-html": "^6.0.0",
     "@sanity/client": "^8.9.0",
     "@sanity/image-url": "^2.1.1"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
   }
 }

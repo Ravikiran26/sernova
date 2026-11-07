@@ -8,6 +8,16 @@ class CleanURLHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         # Strip query-string / fragment before resolving
         path = self.path.split('?')[0].split('#')[0]
+
+        # Mirror Vercel's trailingSlash:false — /treatments/ redirects to /treatments,
+        # otherwise relative CSS and image paths resolve inside the wrong folder.
+        if len(path) > 1 and path.endswith('/'):
+            query = self.path[len(path):]
+            self.send_response(308)
+            self.send_header('Location', path.rstrip('/') + query)
+            self.end_headers()
+            return
+
         full = self.translate_path(path)
 
         # If path.html exists, serve it — unless path is a real file, or a
