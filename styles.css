@@ -71,3 +71,4 @@ footer{background:#061b14;color:rgba(255,255,255,.58);padding:54px 0 24px}.foote
 
 .nav-menu.nav-menu-sm{width:250px;grid-template-columns:1fr}@media(max-width:780px){.nav-menu.nav-menu-sm{width:100%}}.world[id]{scroll-margin-top:130px}
 @media(max-width:780px){.nav-drop.open .nav-menu{opacity:1;visibility:visible;pointer-events:auto}.nav-links .nav-drop:is(:hover,:focus-within,.open) .nav-menu{transform:none}}
+@media(max-width:780px){.wa{width:54px;height:54px;right:14px;bottom:14px}.wa:before{width:54px;height:54px}}
