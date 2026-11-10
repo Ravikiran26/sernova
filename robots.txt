@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
+# Internal API (view counter) and leftovers from the old WordPress site
+Disallow: /api/
+Disallow: /wp-content/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /*?wc-ajax=
+
 Sitemap: https://www.srenova.in/sitemap.xml

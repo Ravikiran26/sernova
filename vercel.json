@@ -67,6 +67,8 @@
     { "source": "/book-consultation", "destination": "/contact", "permanent": true },
     { "source": "/assessments/:path*", "destination": "/contact", "permanent": true },
     { "source": "/assessments", "destination": "/contact", "permanent": true },
-    { "source": "/home-2", "destination": "/", "permanent": true }
+    { "source": "/home-2", "destination": "/", "permanent": true },
+    { "source": "/services/eczema-management", "destination": "/services", "permanent": true },
+    { "source": "/contacts-pediatric-dermatology", "destination": "/contact", "permanent": true }
   ]
 }
