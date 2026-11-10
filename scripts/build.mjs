@@ -114,13 +114,27 @@ const portableComponents = {
 
 // ---------- Page renderers ----------
 
+// Google shows about 60 characters of a title. Long post titles keep their first clause
+// ("PRP vs GFC Therapy for Hair Loss: Benefits..." -> "PRP vs GFC Therapy for Hair Loss").
+// Set a short Meta Title in Sanity to control this exactly.
+function titleTag(title) {
+  const MAX = 60
+  const brand = ' | SRENOVA'
+  if ((title + brand).length <= MAX) return title + brand
+  const m = title.match(/^(.{20,}?)([:?])\s/)
+  const head = m ? m[1] + (m[2] === '?' ? '?' : '') : title
+  if ((head + brand).length <= MAX) return head + brand
+  if (head.length <= MAX) return head
+  return head.slice(0, head.lastIndexOf(' ', MAX - 1)) + '…'
+}
+
 function renderPost(post) {
   const url = `${SITE}/journal/${post.slug}`
   const seo = post.seo || {}
   const title = seo.metaTitle || post.title
   const description = seo.metaDescription || post.excerpt
   const ogSource = seo.ogImage?.asset ? seo.ogImage : post.coverImage
-  const ogImage = ogSource?.asset ? imageUrl(ogSource, 1200, 630) : `${SITE}/assets/clinic-reception-hero.png`
+  const ogImage = ogSource?.asset ? imageUrl(ogSource, 1200, 630) : `${SITE}/assets/og-share.jpg`
   const words = JSON.stringify(post.body || []).split(/\s+/).length
   const minutes = Math.max(1, Math.round(words / 230))
   // Only show "Updated" when the post was edited on a later day than it was published.
@@ -165,7 +179,7 @@ function renderPost(post) {
   }
 
   const head = `${headStart}
-<title>${esc(title)} | SRENOVA Journal</title>
+<title>${esc(titleTag(title))}</title>
 <meta name="description" content="${esc(description)}" />
 ${seo.noIndex ? '<meta name="robots" content="noindex" />\n' : ''}<link rel="canonical" href="${url}" />
 <link rel="icon" type="image/png" href="/assets/logo.png">
