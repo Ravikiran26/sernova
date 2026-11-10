@@ -45,6 +45,28 @@
     { "source": "/treatments/prp-and-gfc-therapy.html", "destination": "/treatments/regenerative-scalp-therapy", "permanent": true },
     { "source": "/treatments/prp-and-gfc-therapy", "destination": "/treatments/regenerative-scalp-therapy", "permanent": true },
     { "source": "/treatments/botox-and-dermal-fillers.html", "destination": "/treatments/anti-wrinkle-injectables", "permanent": true },
-    { "source": "/treatments/botox-and-dermal-fillers", "destination": "/treatments/anti-wrinkle-injectables", "permanent": true }
+    { "source": "/treatments/botox-and-dermal-fillers", "destination": "/treatments/anti-wrinkle-injectables", "permanent": true },
+
+    { "source": "/treatments/botox-fillers", "destination": "/treatments/anti-wrinkle-injectables", "permanent": true },
+    { "source": "/treatments/prp", "destination": "/treatments/regenerative-scalp-therapy", "permanent": true },
+    { "source": "/treatments/hair-loss", "destination": "/treatments/hair-loss-treatment", "permanent": true },
+    { "source": "/treatments/anti-aging", "destination": "/treatments/anti-aging-treatments", "permanent": true },
+    { "source": "/treatments/pigmentation", "destination": "/treatments/pigmentation-and-melasma", "permanent": true },
+    { "source": "/treatments/acne-scars", "destination": "/treatments/acne-and-acne-scars", "permanent": true },
+    { "source": "/treatments/hair-transplant", "destination": "/treatments/hair-transplant-surgery", "permanent": true },
+    { "source": "/services/laser", "destination": "/treatments/laser-hair-removal", "permanent": true },
+    { "source": "/services/dermatology", "destination": "/treatments/skin-rejuvenation", "permanent": true },
+    { "source": "/services/chemical-peels-2", "destination": "/treatments/skin-rejuvenation", "permanent": true },
+    { "source": "/services/anti-aging", "destination": "/treatments/anti-aging-treatments", "permanent": true },
+    { "source": "/services/hair-restoration", "destination": "/treatments/hair-loss-treatment", "permanent": true },
+    { "source": "/services/cosmetic-surgery", "destination": "/services", "permanent": true },
+    { "source": "/resources/blog/laser-hair-removal-on-indian-skin", "destination": "/treatments/laser-hair-removal", "permanent": true },
+    { "source": "/resources/blog/hair-transplant-vs-prp", "destination": "/journal/prp-vs-gfc-therapy-for-hair-loss-benefits-differences-and-what-to-expect", "permanent": true },
+    { "source": "/resources/:path*", "destination": "/journal", "permanent": true },
+    { "source": "/resources", "destination": "/journal", "permanent": true },
+    { "source": "/book-consultation", "destination": "/contact", "permanent": true },
+    { "source": "/assessments/:path*", "destination": "/contact", "permanent": true },
+    { "source": "/assessments", "destination": "/contact", "permanent": true },
+    { "source": "/home-2", "destination": "/", "permanent": true }
   ]
 }
