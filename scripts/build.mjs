@@ -52,7 +52,11 @@ const journalSrc = readFileSync(join(ROOT, 'journal.html'), 'utf8')
 const absolutize = (html) => html.replace(/(href|src)="(?!https?:|\/|#|mailto:|tel:|data:)/g, '$1="/')
 const gtmEnd = '<!-- End Google Tag Manager -->'
 const headStart = journalSrc.slice(0, journalSrc.indexOf(gtmEnd) + gtmEnd.length)
-const stylesheet = absolutize(journalSrc.match(/<link rel="stylesheet"[^>]*>/)[0])
+// Keep the font links AND styles.css (the first stylesheet link in journal.html is the fonts one).
+const stylesheet = absolutize(
+  (journalSrc.match(/<link rel="preconnect"[^\n]*|<link rel="stylesheet"[^>]*styles\.css[^>]*>/g) || []).join('\n')
+)
+if (!stylesheet.includes('styles.css')) throw new Error('build: styles.css link not found in journal.html')
 const bodyStart = absolutize(journalSrc.slice(journalSrc.indexOf('<body>'), journalSrc.indexOf('<main>')))
 const bodyEnd = absolutize(journalSrc.slice(journalSrc.indexOf('</main>') + '</main>'.length))
 
