@@ -186,7 +186,10 @@ function renderPost(post) {
 <title>${esc(titleTag(title))}</title>
 <meta name="description" content="${esc(description)}" />
 ${seo.noIndex ? '<meta name="robots" content="noindex" />\n' : ''}<link rel="canonical" href="${url}" />
-<link rel="icon" type="image/png" href="/assets/logo.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="SRENOVA" />
 <meta property="og:title" content="${esc(title)}" />
